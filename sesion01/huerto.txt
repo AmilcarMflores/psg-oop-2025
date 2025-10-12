@@ -1,0 +1,31 @@
+HUERTO
+
+Descripción:
+Una asociación de productores comunitarios de tomates quiere dar
+a conocer sus productos, para esto quieren una aplicación web 
+donde las personas interesas en comprar sus tomates puedan ver
+fotos y ubicaciones de los huertos y comparar los tomates que
+producen según color, peso y especie
+
+Requisitos:
+- Ver fotos y ubicaciones de los huertos.
+- Comparar por color, peso, especie
+
+Objetos:
+- Huerto
+- Tomate 
+
+Características:
+- Huerto: 
+    - Ubicación
+    - Foto
+
+- Tomate:
+    - Color
+    - Peso
+    - Especie
+
+Acciones:
+    - Ver foto del huerto
+    - Ver ubicaciones de los huertos
+    - Comparar tomates

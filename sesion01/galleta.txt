@@ -1,0 +1,35 @@
+GALLETA
+
+Descripción:
+Un panadero quiere hacer galletas en forma de corazón.
+Las galletas pueden ser de arándano, menta, piña, uva y naranja.
+Deben tener glaseado azul, verde, amarillo, morado y naranja.
+
+ANÁLISIS:
+
+Requisitos:
+- Galletas en forma de corazón
+- Galletas con sabor a arándano, menta, piña, uva y naranja.
+- Glaseado azul, verde, amarillo, morado y naranja.
+
+Objetos:
+- Galletas
+
+Características:
+- Galletas:
+    - Sabor
+    - Glaseado
+
+Acciones:
+(Ninguna)
+
+DISEÑO:
+
+Clases:
+- Galleta:
+    - Nombre: GalletaCorazon
+    - Atributos:
+        - Sabor
+        - Glaseado
+    - Métodos: 
+        - (No hay métodos)

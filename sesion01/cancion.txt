@@ -1,0 +1,33 @@
+CANCIÓN
+
+Descripción:
+Una aplicación permite descubrir canciones nuevas.
+Las personas pueden escuchar fragmentos aleatoriamente,
+darle "like" para ver el nombre de la canción, artista y carátula
+o "dislike" para pasar a la siguiente.
+Compara las canciones con según género, duración y artista.
+
+Requisitos:
+- Escuchar fragmentos aleatoriamente
+- Dar like para ver el nombre, artista y carátula
+- Dar dislike para pasar al siguiente.
+- Comparar canciones según género, duración y artista
+
+Objetos:
+- Canción
+
+Características:
+- Canción:
+    - Nombre
+    - Carátula
+    - Género
+    - Duración
+    - Artista
+    - Fragmentos
+
+Acciones:
+- Escuchar fragmentos
+- Comparar canciones
+- Dar me gusta
+- Dar no me gusta
+- Ver información
