@@ -1,45 +1,68 @@
-Análisis
+### Análisis
 
-Requisitos:
+Requisitos
 
-- Registrar nombre, energía y fuerza del atleta.
-- Implementar métodos que permitan modificar su estado:
-        entrenar(): aumenta fuerza y disminuye energía.
-        descansar(): aumenta energía.
-        comer(): solo hamburguesas → aumenta energía.
+- Existen herramientas utilizadas por un carpintero  
+- Cada herramienta debe ejecutar la acción `usar()`
+- El carpintero no necesita conocer el tipo de herramienta (duck typing)
+- Cada herramienta realiza una acción distinta:
+    - Martillo: clavar clavos
+    - Destornillador: ajustar tornillos
+    - Llave inglesa: apretar tuercas
+        
+- Las herramientas tienen atributos como tipo de mango, material y peso
+    
 
-Objeto:
+Objetos
 
-- Atleta
+- Herramientas
+    
 
-Características (atributos):
+Características
 
-- Nombre
-- Energía
-- Fuerza
+- Herramienta (concepto base aunque no se programará clase padre estricta)
+    - tipo_mango: String
+    - material: String
+    - peso: float
+        
 
-Acciones (métodos):
+Acciones
 
-- Entrenar
-- Descansar
-- Comer
+- usar(): comportamiento diferente según la herramienta
+- Carpintero usa herramientas usando polimorfismo  
+    (no pregunta tipo, solo llama `usar()`)
 
-
-Diseño
+### Diseño
 
 ```mermaid
 classDiagram
-    class Atleta {
-        String nombre
-        Int energia
-        Int fuerza
-
-        entrenar()
-        descansar()
-        comer(comida)
-        mostrar_estado()
-        motivar() static
-        set_energia_inicial(valor)
+    class Carpintero {
+        +usar_herramienta(herramienta)
     }
+
+    class Martillo {
+        +tipo_mango: String
+        +material: String
+        +peso: float
+        +usar()
+    }
+
+    class Destornillador {
+        +tipo_mango: String
+        +material: String
+        +peso: float
+        +usar()
+    }
+
+    class LlaveInglesa {
+        +tipo_mango: String
+        +material: String
+        +peso: float
+        +usar()
+    }
+
+    Carpintero --> Martillo
+    Carpintero --> Destornillador
+    Carpintero --> LlaveInglesa
 ```
 
