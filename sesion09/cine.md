@@ -1,4 +1,4 @@
-## Cine
+# Cine
 
 Una empresa de cine desea llevar el cine a casa de sus clientes,
 para ello creó un sistema donde los clientes pueden unirse 
@@ -21,9 +21,9 @@ Tiene que tener un menú donde:
 5. Finalizar película
 6. Salir
 
-### Análisis
+## Análisis
 
-#### Requisitos
+### Requisitos
 
 - Los clientes pueden unirse a una sala de cine virtual
 - Los clientes pueden ver una película juntos
